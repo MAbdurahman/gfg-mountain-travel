@@ -33,7 +33,6 @@
   --fbt-fluid-body-text-p3: clamp(1.25rem, 0.31vi + 1.19rem, 1.56rem);
   --fbt-fluid-body-text-p2: clamp(1.56rem, 0.39vi + 1.48rem, 1.95rem);
   --fbt-fluid-body-text-p1: clamp(1.95rem, 0.49vi + 1.86rem, 2.44rem);
-
   /************************* fluid heading text *************************/
   --fht-fluid-heading-text-h6: clamp(1rem, 0.25vi + 0.95rem, 1.25rem);
   --fht-fluid-heading-text-h5: clamp(1.25rem, 0.31vi + 1.19rem, 1.56rem);
@@ -41,7 +40,6 @@
   --fht-fluid-heading-text-h3: clamp(1.95rem, 0.49vi + 1.86rem, 2.44rem);
   --fht-fluid-heading-text-h2: clamp(2.44rem, 0.61vi + 2.32rem, 3.05rem);
   --fht-fluid-heading-text-h1: clamp(3.05rem, 0.76vi + 2.9rem, 3.81rem);
-
   /************************* fluid spacing *************************/
   --fs-fluid-space-000: clamp(.5rem, 1vw, 1rem);
   --fs-fluid-space-100: clamp(1rem, 2vw, 1.5rem);
@@ -53,18 +51,15 @@
   --fs-fluid-space-700: clamp(10rem, 20vw, 15rem);
   --fs-fluid-space-800: clamp(15rem, 30vw, 20rem);
   --fs-fluid-space-900: clamp(20rem, 40vw, 30rem);
-
   /************************* fonts *************************/
-  --ff-font-family-body: 'Open Sans', sans-serif;
-  --ff-font-family-head: 'Roboto', sans-serif;
-
+  --ff-font-family-body: "Open Sans", sans-serif;
+  --ff-font-family-head: "Roboto", sans-serif;
   --fw-font-weight-light: 300;
   --fw-font-weight-normal: 400;
   --fw-font-weight-medium: 600;
   --fw-font-weight-semibold: 700;
   --fw-font-weight-bold: 800;
   --fw-font-weight-black: 900;
-
   /************************* typography scale *************************/
   --fs-font-size-heading-01: 3.815rem;
   --fs-font-size-heading-02: 3.052rem;
@@ -74,8 +69,6 @@
   --fs-font-size-heading-06: 1.25rem;
   --fs-font-size-paragraph: 1rem;
   --fs-font-size-small: 0.8rem;
-
-
   /************************* timing functions *************************/
   --tf-timing-function-basic-01: cubic-bezier(0.26, 0.1, 0.27, 1.55);
   --tf-timing-function-basic-02: cubic-bezier(0.17, 0.67, 0.83, 0.67);
@@ -87,8 +80,6 @@
   --tf-timing-function-smooth: cubic-bezier(0.1, 0.7, 0.6, 0.9);
   --tf-timing-function-snappy: cubic-bezier(0.5, 0, 0.4, 0.98);
   --tf-timing-function-snappy2: cubic-bezier(.17, .67, .83, .67);
-
-
   /************************* box shadows *************************/
   /* box-shadow-right */
   --bs-box-shadow-right-000: 8px 0px 8px -5px rgba(34, 40, 45, 0.15);
@@ -101,7 +92,6 @@
   --bs-box-shadow-right-700: 8px 0px 8px 0px rgba(34, 40, 45, 0.25);
   --bs-box-shadow-right-800: 8px 0px 8px 0px rgba(34, 40, 45, 0.35);
   --bs-box-shadow-right-900: 8px 0px 8px 0px rgba(34, 40, 45, 0.55);
-
   /* box-shadow-bottom */
   --bs-box-shadow-bottom-000: 0px 8px 8px -5px rgba(34, 40, 45, 0.15);
   --bs-box-shadow-bottom-100: 0px 8px 8px -5px rgba(34, 40, 45, 0.25);
@@ -113,7 +103,6 @@
   --bs-box-shadow-bottom-700: 0px 8px 8px 0px rgba(34, 40, 45, 0.25);
   --bs-box-shadow-bottom-800: 0px 8px 8px 0px rgba(34, 40, 45, 0.35);
   --bs-box-shadow-bottom-900: 0px 8px 8px 0px rgba(34, 40, 45, 0.55);
-
   /* box-shadow-bottom-right */
   --bs-box-shadow-bottom-right-000: 3px 3px 8px -1px rgba(34, 40, 45, 0.15), 3px 3px 8px -1px rgba(34, 40, 45, 0.15);
   --bs-box-shadow-bottom-right-100: 3px 3px 8px -1px rgba(34, 40, 45, 0.25), 3px 3px 8px -1px rgba(34, 40, 45, 0.25);
@@ -125,7 +114,6 @@
   --bs-box-shadow-bottom-right-700: 5px 3px 21px -1px rgba(34, 40, 45, 0.25), 5px 3px 21px -1px rgba(34, 40, 45, 0.25);
   --bs-box-shadow-bottom-right-800: 5px 3px 21px -1px rgba(34, 40, 45, 0.35), 5px 3px 21px -1px rgba(34, 40, 45, 0.35);
   --bs-box-shadow-bottom-right-900: 5px 3px 5px -1px rgba(34, 40, 45, 0.25), 5px 3px 5px -1px rgba(34, 40, 45, 0.25);
-
   /************************* border-radius *************************/
   --br-border-radius-000: 1px;
   --br-border-radius-100: 2px;
@@ -137,7 +125,6 @@
   --br-border-radius-700: 34px;
   --br-border-radius-800: 55px;
   --br-border-radius-900: 50%;
-
   /************************* colors *************************/
   /* primary colors */
   --clr-blue-01-000: hsl(221, 67%, 94%);
@@ -150,7 +137,6 @@
   --clr-blue-01-700: hsl(225, 40%, 34%);
   --clr-blue-01-800: hsl(230, 30%, 28%);
   --clr-blue-01-900: hsl(235, 23%, 30%);
-
   /* neutral colors */
   --clr-neutral-000: hsl(221, 0%, 98%);
   --clr-neutral-100: hsl(221, 0%, 88%);
@@ -162,7 +148,6 @@
   --clr-neutral-700: hsl(225, 0%, 28%);
   --clr-neutral-800: hsl(230, 0%, 18%);
   --clr-neutral-900: hsl(235, 0%, 10%);
-
   /* augmented colors */
   --clr-augmented-000: hsl(221, 12%, 98%);
   --clr-augmented-100: hsl(221, 12%, 88%);
@@ -174,7 +159,6 @@
   --clr-augmented-700: hsl(225, 20%, 28%);
   --clr-augmented-800: hsl(230, 25%, 18%);
   --clr-augmented-900: hsl(235, 23%, 10%);
-
 }
 
 html {
@@ -188,7 +172,6 @@ body {
   letter-spacing: 1px;
   line-height: 1.5;
   color: var(--clr-augmented-800);
-
 }
 
 /*===============================================================
@@ -197,14 +180,13 @@ body {
 /* width */
 ::-webkit-scrollbar {
   width: 3px;
-
 }
+
 /* track */
 ::-webkit-scrollbar-track {
   margin-left: 4px;
   box-shadow: inset 0 0 5px var(--clr-neutral-200);
   border-radius: 3px;
-
 }
 
 /* handle */
@@ -225,36 +207,30 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--ff-font-family-heading);
   font-weight: var(--fw-font-weight-semibold);
   text-rendering: optimizeLegibility;
-
 }
+
 h1 {
   font-size: var(--fs-font-size-heading-01);
-
 }
 
 h2 {
   font-size: var(--fs-font-size-heading-02);
-
 }
 
 h3 {
   font-size: var(--fs-font-size-heading-03);
-
 }
 
 h4 {
   font-size: var(--fs-font-size-heading-04);
-
 }
 
 h5 {
   font-size: var(--fs-font-size-heading-05);
-
 }
 
 h6 {
   font-size: var(--fs-font-size-heading-06);
-
 }
 
 p, small {
@@ -264,18 +240,15 @@ p, small {
 
 p {
   font-size: var(--fs-font-size-paragraph);
-
 }
 
 small {
   font-size: var(--fs-font-size-small);
-
 }
 
 img {
   width: 100%;
   height: auto;
-
 }
 
 /*===============================================================
@@ -302,31 +275,26 @@ img {
     max-width: 544px;
   }
 }
-
 @media (min-width: 768px) {
   .utils-container {
     max-width: 720px;
   }
 }
-
 @media (min-width: 992px) {
   .utils-container {
     max-width: 960px;
   }
 }
-
 @media (min-width: 1200px) {
   .utils-container {
     max-width: 1144px;
   }
 }
-
 @media (min-width: 1400px) {
   .utils-container {
     max-width: 1320px;
   }
 }
-
 /************************* buttons *************************/
 .button {
   position: relative;
@@ -371,7 +339,7 @@ img {
 }
 
 .button--primary::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -426,9 +394,7 @@ img {
   border-radius: var(--br-border-radius-300);
 }
 
-
 /************************* flexbox and grid helper classes *************************/
-
 .flex-center {
   display: flex;
   justify-content: center;
@@ -482,19 +448,6 @@ img {
   column-gap: 2rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*===============================================================
           Keyframes and animation classes
 ==================================================================*/
@@ -529,7 +482,6 @@ img {
     transform: translateX(0);
   }
 }
-
 @keyframes exit-to-left {
   0% {
     opacity: 1;
@@ -542,7 +494,6 @@ img {
     transform: translateX(-2000px);
   }
 }
-
 /*===============================================================
           Preloader
 ==================================================================*/
@@ -553,15 +504,14 @@ img {
   right: 0;
   bottom: 0;
   width: 100%;
-  z-index: 10000;
+  background-color: var(--clr-blue-01-000);
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  background-color: var(--clr-blue-01-000);
-
+  z-index: 10000;
 }
 
 .preloader__gif {
@@ -570,14 +520,4 @@ img {
   align-self: center;
 }
 
-@media screen and (max-width: 1024px) {
-  .preloader__gif {
-    width: 33.333%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .preloader__gif {
-    width: 50%;
-  }
-}
+/*# sourceMappingURL=main.comp.css.map */
