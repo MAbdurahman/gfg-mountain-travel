@@ -1,0 +1,492 @@
+/*===============================================================
+          Website Resets
+==================================================================*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+*::-moz-focus-inner {
+  border: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*===============================================================
+          Root and General styles
+==================================================================*/
+:root {
+  /************************* fluid body text *************************/
+  --fbt-fluid-body-text-p6: clamp(0.64rem, 0.16vi + 0.61rem, 0.8rem);
+  --fbt-fluid-body-text-p5: clamp(0.8rem, 0.2vi + 0.76rem, 1rem);
+  --fbt-fluid-body-text-p4: clamp(1rem, 0.25vi + 0.95rem, 1.25rem);
+  --fbt-fluid-body-text-p3: clamp(1.25rem, 0.31vi + 1.19rem, 1.56rem);
+  --fbt-fluid-body-text-p2: clamp(1.56rem, 0.39vi + 1.48rem, 1.95rem);
+  --fbt-fluid-body-text-p1: clamp(1.95rem, 0.49vi + 1.86rem, 2.44rem);
+  /************************* fluid heading text *************************/
+  --fht-fluid-heading-text-h6: clamp(1rem, 0.25vi + 0.95rem, 1.25rem);
+  --fht-fluid-heading-text-h5: clamp(1.25rem, 0.31vi + 1.19rem, 1.56rem);
+  --fht-fluid-heading-text-h4: clamp(1.56rem, 0.39vi + 1.48rem, 1.95rem);
+  --fht-fluid-heading-text-h3: clamp(1.95rem, 0.49vi + 1.86rem, 2.44rem);
+  --fht-fluid-heading-text-h2: clamp(2.44rem, 0.61vi + 2.32rem, 3.05rem);
+  --fht-fluid-heading-text-h1: clamp(3.05rem, 0.76vi + 2.9rem, 3.81rem);
+  /************************* fluid spacing *************************/
+  --fs-fluid-space-000: clamp(.5rem, 1vw, 1rem);
+  --fs-fluid-space-100: clamp(1rem, 2vw, 1.5rem);
+  --fs-fluid-space-200: clamp(1.5rem, 3vw, 2rem);
+  --fs-fluid-space-300: clamp(2rem, 4vw, 3rem);
+  --fs-fluid-space-400: clamp(4rem, 5vw, 5rem);
+  --fs-fluid-space-500: clamp(5rem, 7vw, 7.5rem);
+  --fs-fluid-space-600: clamp(7.5rem, 10vw, 10rem);
+  --fs-fluid-space-700: clamp(10rem, 20vw, 15rem);
+  --fs-fluid-space-800: clamp(15rem, 30vw, 20rem);
+  --fs-fluid-space-900: clamp(20rem, 40vw, 30rem);
+  /************************* fonts *************************/
+  --ff-font-family-body: "Open Sans", sans-serif;
+  --ff-font-family-head: "Roboto", sans-serif;
+  --fw-font-weight-light: 300;
+  --fw-font-weight-normal: 400;
+  --fw-font-weight-medium: 600;
+  --fw-font-weight-semibold: 700;
+  --fw-font-weight-bold: 800;
+  --fw-font-weight-black: 900;
+  /************************* typography scale *************************/
+  --fs-font-size-heading-01: 3.815rem;
+  --fs-font-size-heading-02: 3.052rem;
+  --fs-font-size-heading-03: 2.441rem;
+  --fs-font-size-heading-04: 1.953rem;
+  --fs-font-size-heading-05: 1.563rem;
+  --fs-font-size-heading-06: 1.25rem;
+  --fs-font-size-paragraph: 1rem;
+  --fs-font-size-small: 0.8rem;
+  /************************* timing functions *************************/
+  --tf-timing-function-basic-01: cubic-bezier(0.26, 0.1, 0.27, 1.55);
+  --tf-timing-function-basic-02: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  --tf-timing-function-ease: cubic-bezier(0.19, 0.08, 0.46, 0.99);
+  --tf-timing-function-ease-in: cubic-bezier(0.33, 0.02, 0.84, 0.75);
+  --tf-timing-function-ease-out: cubic-bezier(0.05, 0.21, 0.66, 0.98);
+  --tf-timing-function-ease-in-out: cubic-bezier(0.38, 0, 0.57, 0.99);
+  --tf-timing-function-linear: cubic-bezier(0.19, 0.08, 0.84, 0.75);
+  --tf-timing-function-smooth: cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  --tf-timing-function-snappy: cubic-bezier(0.5, 0, 0.4, 0.98);
+  --tf-timing-function-snappy2: cubic-bezier(.17, .67, .83, .67);
+  /************************* box shadows *************************/
+  /* box-shadow-right */
+  --bs-box-shadow-right-000: 8px 0px 8px -5px rgba(34, 40, 45, 0.15);
+  --bs-box-shadow-right-100: 8px 0px 8px -5px rgba(34, 40, 45, 0.25);
+  --bs-box-shadow-right-200: 8px 0px 8px -5px rgba(34, 40, 45, 0.35);
+  --bs-box-shadow-right-300: 8px 0px 8px -3px rgba(34, 40, 45, 0.15);
+  --bs-box-shadow-right-400: 8px 0px 8px -3px rgba(34, 40, 45, 0.25);
+  --bs-box-shadow-right-500: 8px 0px 8px -3px rgba(34, 40, 45, 0.35);
+  --bs-box-shadow-right-600: 8px 0px 8px 0px rgba(34, 40, 45, 0.15);
+  --bs-box-shadow-right-700: 8px 0px 8px 0px rgba(34, 40, 45, 0.25);
+  --bs-box-shadow-right-800: 8px 0px 8px 0px rgba(34, 40, 45, 0.35);
+  --bs-box-shadow-right-900: 8px 0px 8px 0px rgba(34, 40, 45, 0.55);
+  /* box-shadow-bottom */
+  --bs-box-shadow-bottom-000: 0px 8px 8px -5px rgba(34, 40, 45, 0.15);
+  --bs-box-shadow-bottom-100: 0px 8px 8px -5px rgba(34, 40, 45, 0.25);
+  --bs-box-shadow-bottom-200: 0px 8px 8px -5px rgba(34, 40, 45, 0.35);
+  --bs-box-shadow-bottom-300: 0px 8px 8px -3px rgba(34, 40, 45, 0.15);
+  --bs-box-shadow-bottom-400: 0px 8px 8px -3px rgba(34, 40, 45, 0.25);
+  --bs-box-shadow-bottom-500: 0px 8px 8px -3px rgba(34, 40, 45, 0.35);
+  --bs-box-shadow-bottom-600: 0px 8px 8px 0px rgba(34, 40, 45, 0.15);
+  --bs-box-shadow-bottom-700: 0px 8px 8px 0px rgba(34, 40, 45, 0.25);
+  --bs-box-shadow-bottom-800: 0px 8px 8px 0px rgba(34, 40, 45, 0.35);
+  --bs-box-shadow-bottom-900: 0px 8px 8px 0px rgba(34, 40, 45, 0.55);
+  /* box-shadow-bottom-right */
+  --bs-box-shadow-bottom-right-000: 3px 3px 8px -1px rgba(34, 40, 45, 0.15), 3px 3px 8px -1px rgba(34, 40, 45, 0.15);
+  --bs-box-shadow-bottom-right-100: 3px 3px 8px -1px rgba(34, 40, 45, 0.25), 3px 3px 8px -1px rgba(34, 40, 45, 0.25);
+  --bs-box-shadow-bottom-right-200: 3px 3px 8px -1px rgba(34, 40, 45, 0.35), 3px 3px 8px -1px rgba(34, 40, 45, 0.35);
+  --bs-box-shadow-bottom-right-300: 5px 3px 13px -1px rgba(34, 40, 45, 0.15), 5px 3px 13px -1px rgba(34, 40, 45, 0.15);
+  --bs-box-shadow-bottom-right-400: 5px 3px 13px -1px rgba(34, 40, 45, 0.25), 5px 3px 13px -1px rgba(34, 40, 45, 0.25);
+  --bs-box-shadow-bottom-right-500: 5px 3px 13px -1px rgba(34, 40, 45, 0.35), 5px 3px 13px -1px rgba(34, 40, 45, 0.35);
+  --bs-box-shadow-bottom-right-600: 5px 3px 21px -1px rgba(34, 40, 45, 0.15), 5px 3px 21px -1px rgba(34, 40, 45, 0.15);
+  --bs-box-shadow-bottom-right-700: 5px 3px 21px -1px rgba(34, 40, 45, 0.25), 5px 3px 21px -1px rgba(34, 40, 45, 0.25);
+  --bs-box-shadow-bottom-right-800: 5px 3px 21px -1px rgba(34, 40, 45, 0.35), 5px 3px 21px -1px rgba(34, 40, 45, 0.35);
+  --bs-box-shadow-bottom-right-900: 5px 3px 5px -1px rgba(34, 40, 45, 0.25), 5px 3px 5px -1px rgba(34, 40, 45, 0.25);
+  /************************* border-radius *************************/
+  --br-border-radius-000: 1px;
+  --br-border-radius-100: 2px;
+  --br-border-radius-200: 3px;
+  --br-border-radius-300: 5px;
+  --br-border-radius-400: 8px;
+  --br-border-radius-500: 13px;
+  --br-border-radius-600: 21px;
+  --br-border-radius-700: 34px;
+  --br-border-radius-800: 55px;
+  --br-border-radius-900: 50%;
+  /************************* colors *************************/
+  /* primary colors */
+  --clr-blue-01-000: hsl(221, 67%, 94%);
+  --clr-blue-01-100: hsl(221, 67%, 89%);
+  --clr-blue-01-200: hsl(221, 67%, 75%);
+  --clr-blue-01-300: hsl(221, 51%, 67%);
+  --clr-blue-01-400: hsl(221, 51%, 55%);
+  --clr-blue-01-500: hsl(221, 54%, 40%);
+  --clr-blue-01-600: hsl(221, 59.52%, 32.94%);
+  --clr-blue-01-700: hsl(225, 40%, 34%);
+  --clr-blue-01-800: hsl(230, 30%, 28%);
+  --clr-blue-01-900: hsl(235, 23%, 30%);
+  /* neutral colors */
+  --clr-neutral-000: hsl(221, 0%, 98%);
+  --clr-neutral-100: hsl(221, 0%, 88%);
+  --clr-neutral-200: hsl(221, 0%, 78%);
+  --clr-neutral-300: hsl(221, 0%, 68%);
+  --clr-neutral-400: hsl(221, 0%, 58%);
+  --clr-neutral-500: hsl(221, 0%, 48%);
+  --clr-neutral-600: hsl(221, 0%, 38%);
+  --clr-neutral-700: hsl(225, 0%, 28%);
+  --clr-neutral-800: hsl(230, 0%, 18%);
+  --clr-neutral-900: hsl(235, 0%, 10%);
+  /* augmented colors */
+  --clr-augmented-000: hsl(221, 12%, 98%);
+  --clr-augmented-100: hsl(221, 12%, 88%);
+  --clr-augmented-200: hsl(221, 12%, 78%);
+  --clr-augmented-300: hsl(221, 15%, 68%);
+  --clr-augmented-400: hsl(221, 15%, 58%);
+  --clr-augmented-500: hsl(221, 15%, 48%);
+  --clr-augmented-600: hsl(221, 15%, 38%);
+  --clr-augmented-700: hsl(225, 20%, 28%);
+  --clr-augmented-800: hsl(230, 25%, 18%);
+  --clr-augmented-900: hsl(235, 23%, 10%);
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--ff-font-family-body);
+  font-weight: var(--ff-font-weight-normal);
+  letter-spacing: 1px;
+  color: var(--clr-augmented-800);
+}
+
+/*===============================================================
+          Scrollbar Styles
+==================================================================*/
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  margin-left: 4px;
+  box-shadow: inset 0 0 5px #bfbfbf;
+  box-shadow: inset 0 0 5px var(--clr-neutral-200);
+  border-radius: 3px;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  background: var(--clr-neutral-300);
+  border-radius: var(--br-border-radius-200);
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #616161;
+  background: var(--clr-neutral-600);
+}
+
+/*===============================================================
+          Typography Scale - 1.250 - Major Third
+==================================================================*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-font-family-heading);
+  font-weight: var(--fw-font-weight-semibold);
+}
+
+h1 {
+  font-size: var(--fs-font-size-heading-01);
+}
+
+h2 {
+  font-size: var(--fs-font-size-heading-02);
+}
+
+h3 {
+  font-size: var(--fs-font-size-heading-03);
+}
+
+h4 {
+  font-size: var(--fs-font-size-heading-04);
+}
+
+h5 {
+  font-size: var(--fs-font-size-heading-05);
+}
+
+h6 {
+  font-size: var(--fs-font-size-heading-06);
+}
+
+p, small {
+  font-family: var(--ff-font-family-body);
+}
+
+p {
+  font-size: var(--fs-font-size-paragraph);
+}
+
+small {
+  font-size: var(--fs-font-size-small);
+}
+
+/*===============================================================
+          Utility classes
+==================================================================*/
+.utils-container-fluid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.utils-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 576px) {
+  .utils-container {
+    max-width: 544px;
+  }
+}
+@media (min-width: 768px) {
+  .utils-container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .utils-container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .utils-container {
+    max-width: 1144px;
+  }
+}
+@media (min-width: 1400px) {
+  .utils-container {
+    max-width: 1320px;
+  }
+}
+/************************* buttons *************************/
+.button {
+  position: relative;
+  min-width: 160px;
+  max-width: 224px;
+  z-index: 1;
+  display: block;
+  padding: 1em 2em;
+  vertical-align: middle;
+  font-family: var(--ff-font-family-body);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: inherit;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  background: none;
+  border-radius: var(--br-border-radius-300);
+  border: none;
+  transition-timing-function: var(--tf-timing-function-smooth);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button--primary {
+  font-weight: var(--fw-font-weight-medium);
+  text-align: center;
+  color: var(--clr-neutral-100);
+  background-color: hsl(221.4, 59.52%, 32.94%);
+  background-color: var(--clr-blue-01-600);
+  border: 2px solid var(--clr-blue-01-600);
+  opacity: 1;
+  -webkit-transition: border-color 0.4s, color 0.4s;
+  transition: border-color 0.4s, color 0.4s;
+}
+
+.button--primary:hover {
+  color: var(--clr-neutral-000);
+  color: var(--clr-blue-01-600);
+  border-color: var(--clr-blue-01-000);
+}
+
+.button--primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-blue-01-000);
+  z-index: -1;
+  opacity: 0;
+  border-radius: var(--br-border-radius-100);
+  -webkit-transform: scale3d(0.7, 1, 1);
+  transform: scale3d(0.7, 1, 1);
+  -webkit-transition: -webkit-transform 0.333s, opacity 0.333s;
+  transition: transform 0.333s, opacity 0.333s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: var(--tf-timing-function-smooth);
+}
+
+.button--primary:hover::before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/************************* section heading *************************/
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 80px;
+  padding: 7.5em 5em;
+}
+
+.section__heading-title {
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--ff-font-family-heading);
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--clr-augmented-600);
+}
+
+.section__heading-paragraph {
+  font-family: var(--ff-font-family-body);
+  font-size: var(--fs-font-size-paragraph);
+  color: var(--clr-augmented-900);
+}
+
+.section__horizontal-rule {
+  border-top: 2px solid var(--clr-augmented-900);
+  border-radius: var(--br-border-radius-300);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+.grid-container {
+  margin: 3em auto;
+  width: 90%;
+  display: grid;
+  row-gap: 3rem;
+  column-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-container-12 {
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  row-gap: 3rem;
+  column-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-column-1 {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  column-gap: 2rem;
+}
+
+.grid-column-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 2rem;
+}
+
+.grid-column-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 2rem;
+}
+
+.grid-column-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 2rem;
+}
+
+/*===============================================================
+          Keyframes and animation classes
+==================================================================*/
+.move-in-from-right {
+  animation-name: move-in-from-right;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+.exit-to-left {
+  animation-name: exit-to-left;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-50px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes exit-to-left {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
