@@ -8,21 +8,473 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- fontawesome icons-->
+    <link crossorigin="anonymous"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
     <!--favicon -->
     <link rel="shortcut icon" href="./favicon.ico">
     <!--normalize css-->
     <link rel="stylesheet" href="./css/normalize.css">
+    <!--owl carousel-2.3.4-->
+    <link rel="stylesheet" href="./css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl-carousel/owl.theme.default.min.css">
     <!--main css-->
     <link rel="stylesheet" href="./css/main.css">
     <title>Mountain Travel | Adventures</title>
 </head>
-<body>
+<body id="page-top">
 <!-- begin preloader -->
 <div id="preloader" class="preloader">
     <img src="./assets/gif/earth.gif" alt="spinning earth" id="preloader__gif" class="preloader__gif">
 </div>
+<!-- begin header -->
+<header id="header" class="header">
+    <navbar id="header__navbar" class="header__navbar">
+        <a href="#page-top" class="header__brand">
+            <img src="./assets/img/logo.png" alt="brand logo" class="header__brand--logo">
+        </a>
+        <button class="header__menu-burger">
+            <span class="header__menu-burger-bar"></span>
+        </button>
+        <nav class="header__navigation">
+            <ul id="header__list" class="header__navigation-list">
+                <li class="header__navigation-link-item">
+                    <a href="#page-top" class="header__navigation-link active">Home</a>
+                </li>
+                <li class="header__navigation-link-item">
+                    <a href="#section__tours" class="header__navigation-link">Tours</a>
+                </li>
+                <li class="header__navigation-link-item">
+                    <a href="#section__packages" class="header__navigation-link">Packages</a>
+                </li>
+                <li class="header__navigation-link-item">
+                    <a href="#section__testimonials" class="header__navigation-link">Testimonials</a>
+                </li>
+                <li class="header__navigation-link-item">
+                    <a href="#section__contact" class="header__navigation-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </navbar>
+    
+    <section class="banner__section section">
+        <div class="banner__section-background"></div>
+        <div id="banner__section-content" class="banner__section-content">
+            <h1 class="banner__section-heading">Mountain Travel</h1>
+            <h3 id="banner__subHeading" class="banner__section-subHeading">Adventure Tours Around The World</h3>
+            <a href="#section__tours" id="banner__section-btn" class="button button--primary">View More</a>
+        </div>
+    </section>
+</header>
+<!-- begin main -->
+<main class="main">
+    <section id="section__tours" class="section__tours section">
+        <h2 class="section__heading-title">Our Tour Adventures</h2>
+        <p id="section__tours-heading-paragraph" class="section__heading-paragraph">T</p>
+        <hr class="section__horizontal-rule" />
+        <ul class="section__tours-grid">
+            <li class="tours__small" style="background-image: url('./assets/img/mountain1.jpg');"></li>
+            <li class="tours__large" style="background-image: url('./assets/img/mountain2.jpg');"></li>
+            <li class="tours__large" style="background-image: url('./assets/img/mountain3.jpg');"></li>
+            <li class="tours__small" style="background-image: url('./assets/img/mountain4.jpg');"></li>
+        </ul>
+    </section>
+    <section id="section__packages" class="section__packages section">
+        <h2 class="section__heading-title">Tour Packages</h2>
+        <p id="section__packages-heading-paragraph" class="section__heading-paragraph">W</p>
+        <hr class="section__horizontal-rule" />
+    </section>
+    <section id="section__testimonials" class="section__testimonials section">
+        <h2 class="section__heading-title">testimonials</h2>
+        <p id="section__testimonials-heading-paragraph" class="section__heading-paragraph">B</p>
+        <hr class="section__horizontal-rule" />
+        <!-- owl carousel slider begins-->
+        <div class="owl-carousel owl-theme section__testimonials--bottom">
+            <!-- testimonial 1-->
+            <div class="item testimonials__card">
+                <div class="testimonials__card--body">
+                    <div class="testimonials__card--quote">
+                        <i class="fa fa-quote-left"></i>
+                        <h4 class="testimonials__card--title">The Great Escape</h4>
+                    </div>
+                    <p class="testimonials__card--review"> I went to the Dolomites with Mountain Hiking Holidays in order to ‘get away from it all,’ to hike in the mountains. With the expert guidance and planning by John and Amy, the trip far exceeded my already high expectations. Not only were the selected trails and itineraries breathtaking, but the fantastic food and cultural experiences made this a trip of a lifetime. I have never eaten so well!</p>
+                    <div class="testimonials__card--rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials__card--profile">
+                        <div class="testimonials__card--profile-image">
+                            <img src="assets/img/testimonials/testimonial-1.jpg" alt="testimonial image">
+                        </div>
+                        <div class="testimonials__card--profile-info">
+                            <span class="testimonials__card--profile-name">Andrew Duncan</span>
+                            <span class="testimonials__card--profile-title">Mathematician</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- testimonial 2-->
+            <div class="item testimonials__card" >
+                <div class="testimonials__card--body">
+                    <div class="testimonials__card--quote">
+                        <i class="fa fa-quote-left"></i>
+                        <h4 class="testimonials__card--title">Dream Weaver</h4>
+                    </div>
+                    <p class="testimonials__card--review"> I went to the Dolomites with Mountain Hiking Holidays in order to ‘get away from it all,’ to hike in the mountains. With the expert guidance and planning by John and Amy, the trip far exceeded my already high expectations. Not only were the selected trails and itineraries breathtaking, but the fantastic food and cultural experiences made this a trip of a lifetime. I have never eaten so well!</p>
+                    <div class="testimonials__card--rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials__card--profile">
+                        <div class="testimonials__card--profile-image">
+                            <img src="assets/img/testimonials/testimonial-2.jpg" alt="testimonial image">
+                        </div>
+                        <div class="testimonials__card--profile-info">
+                            <span class="testimonials__card--profile-name">Courtney Cole</span>
+                            <span class="testimonials__card--profile-title">Dental Hygienist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- testimonial 3-->
+            <div class="item testimonials__card" >
+                <div class="testimonials__card--body">
+                    <div class="testimonials__card--quote">
+                        <i class="fa fa-quote-left"></i>
+                        <h4 class="testimonials__card--title">Shadows of the Wind</h4>
+                    </div>
+                    <p class="testimonials__card--review"> I went to the Dolomites with Mountain Hiking Holidays in order to ‘get away from it all,’ to hike in the mountains. With the expert guidance and planning by John and Amy, the trip far exceeded my already high expectations. Not only were the selected trails and itineraries breathtaking, but the fantastic food and cultural experiences made this a trip of a lifetime. I have never eaten so well!</p>
+                    <div class="testimonials__card--rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials__card--profile">
+                        <div class="testimonials__card--profile-image">
+                            <img src="assets/img/testimonials/testimonial-3.jpg" alt="testimonial image">
+                        </div>
+                        <div class="testimonials__card--profile-info">
+                            <span class="testimonials__card--profile-name">Derek Lyons</span>
+                            <span class="testimonials__card--profile-title">System Analyst</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- testimonial 4-->
+            <div class="item testimonials__card">
+                <div class="testimonials__card--body">
+                    <div class="testimonials__card--quote">
+                        <i class="fa fa-quote-left"></i>
+                        <h4 class="testimonials__card--title">Whisper of Faith</h4>
+                    </div>
+                    <p class="testimonials__card--review"> I went to the Dolomites with Mountain Hiking Holidays in order to ‘get away from it all,’ to hike in the mountains. With the expert guidance and planning by John and Amy, the trip far exceeded my already high expectations. Not only were the selected trails and itineraries breathtaking, but the fantastic food and cultural experiences made this a trip of a lifetime. I have never eaten so well!</p>
+                    <div class="testimonials__card--rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials__card--profile">
+                        <div class="testimonials__card--profile-image">
+                            <img src="assets/img/testimonials/testimonial-4.jpg" alt="testimonial image">
+                        </div>
+                        <div class="testimonials__card--profile-info">
+                            <span class="testimonials__card--profile-name">Jessica Ward</span>
+                            <span class="testimonials__card--profile-title">Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- testimonial 5-->
+            <div class="item testimonials__card">
+                <div class="testimonials__card--body">
+                    <div class="testimonials__card--quote">
+                        <i class="fa fa-quote-left"></i>
+                        <h4 class="testimonials__card--title">Symphony of the Sublime</h4>
+                    </div>
+                    <p class="testimonials__card--review"> I went to the Dolomites with Mountain Hiking Holidays in order to ‘get away from it all,’ to hike in the mountains. With the expert guidance and planning by John and Amy, the trip far exceeded my already high expectations. Not only were the selected trails and itineraries breathtaking, but the fantastic food and cultural experiences made this a trip of a lifetime. I have never eaten so well!</p>
+                    <div class="testimonials__card--rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials__card--profile">
+                        <div class="testimonials__card--profile-image">
+                            <img src="assets/img/testimonials/testimonial-5.jpg" alt="testimonial image">
+                        </div>
+                        <div class="testimonials__card--profile-info">
+                            <span class="testimonials__card--profile-name">Caleb Murray</span>
+                            <span class="testimonials__card--profile-title">Psychologist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- testimonial 6-->
+            <div class="item testimonials__card">
+                <div class="testimonials__card--body">
+                    <div class="testimonials__card--quote">
+                        <i class="fa fa-quote-left"></i>
+                        <h4 class="testimonials__card--title">Throne of Tranquility</h4>
+                    </div>
+                    <p class="testimonials__card--review"> I went to the Dolomites with Mountain Hiking Holidays in order to ‘get away from it all,’ to hike in the mountains. With the expert guidance and planning by John and Amy, the trip far exceeded my already high expectations. Not only were the selected trails and itineraries breathtaking, but the fantastic food and cultural experiences made this a trip of a lifetime. I have never eaten so well!</p>
+                    <div class="testimonials__card--rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials__card--profile">
+                        <div class="testimonials__card--profile-image">
+                            <img src="assets/img/testimonials/testimonial-6.jpg" alt="testimonial image">
+                        </div>
+                        <div class="testimonials__card--profile-info">
+                            <span class="testimonials__card--profile-name">Scarlet Harmon</span>
+                            <span class="testimonials__card--profile-title">Court Reporter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section__contact" class="section__contact section">
+        <h2 class="section__heading-title">contact</h2>
+        <p id="section__contact-heading-paragraph" class="section__heading-paragraph">W</p>
+        <hr class="section__horizontal-rule" />
+        <div class="section__contact--bottom">
+            <div class="contact__form--group" id="contact__form--group">
+                <form action="" class="contact__form" id="contact__form">
+                    <div class="contact__form--content js-effect-08">
+                        <input class="utils-effect-08" id="input-01"
+                               name="fullName"
+                               placeholder="" type="text"/>
+                        <label for="input-01">Full name</label>
+                        <span class="focus-background-08"></span>
+                        <span class="contact__form--input-prompt"
+                              id="contact__form--name-prompt">&nbsp;</span>
+                    </div>
+                    <div class="contact__form--content js-effect-08">
+                        <input class="utils-effect-08" id="input-02"
+                               name="email"
+                               placeholder="" type="text"/>
+                        <label for="input-02">Email</label>
+                        <span class="focus-background-08"></span>
+                        <span class="contact__form--input-prompt"
+                              id="contact__form--email-prompt">&nbsp;</span>
+                    </div>
+                    <div class="contact__form--content-textarea js-effect-08">
+                                <textarea class="utils-effect-08"
+                                          id="contact__form--message"
+                                          maxlength="160" name="message"
+                                          placeholder="" rows="3"
+                                          type="textarea"></textarea>
+                        <label for="contact__form--message">Message</label>
+                        <span class="focus-background-08"></span>
+                        <span class="contact__form--input-prompt-textarea"
+                              id="contact__form--message-prompt">&nbsp;</span>
+                    </div>
+                    <div class="notification__message"
+                         id="notification__message"></div>
+                    <div class="contact__form--content">
+                        <input class="button button--primary"
+                               id="contact__form--submit"
+                               type="button"
+                               value="Send Message">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
 
-
+<!-- begin footer -->
+<footer id="footer__section" class="footer__section">
+    <div>
+        <div class="footer">
+            <div class="footer__top">
+                <div class="footer__top--left">
+                    <!--<h4 class="footer__heading">Mountain<span
+                            class="footer__logo&#45;&#45;color">Travel</span>, Inc.</h4>
+                    <ul class="footer__navigation&#45;&#45;list">
+                        <li class="footer__navigation&#45;&#45;link-item">
+                            <a class="footer__navigation&#45;&#45;link" href="#">home</a>
+                        </li>
+                        <li class="footer__navigation&#45;&#45;link-item footer__link-item">
+                            <a class="footer__navigation&#45;&#45;link" href="#">tours</a>
+                        </li>
+                        <li class="footer__navigation&#45;&#45;link-item footer__link-item">
+                            <a class="footer__navigation&#45;&#45;link" href="#">packages</a>
+                        </li>
+                        <li class="footer__navigation&#45;&#45;link-item footer__link-item">
+                            <a class="footer__navigation&#45;&#45;link" href="#">testimonials</a>
+                        </li>
+                        <li class="footer__navigation&#45;&#45;link-item footer__link-item">
+                            <a class="footer__navigation&#45;&#45;link" href="#">contact</a>
+                        </li>
+                    </ul>-->
+                    <h4 class="footer__heading">Mission Statement</h4>
+                    <p class="footer__mission--statement">
+                        We connect adventurers' soul with meaningful experiences through our
+                        carefully selected mountain journeys that respect local cultures and
+                        preserve natural environments.
+                    </p>
+                    <!--<ul class="footer__social-media-list">
+                        <li class="footer__social-media-link-item">
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-media-link-item">
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-media-link-item">
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-media-link-item">
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>-->
+                </div>
+                <div class="footer__top--right">
+                    <div class="footer__top--right-left">
+                        <h4 class="footer__heading">Location</h4>
+                        <ul class="footer__location--list">
+                            <li class="footer__location--link-item">
+                                <a class="footer__location--link first__contact-link"
+                                   href="#">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span class="footer___location-address first__location--address-line">
+                                        <span class="footer__address--item">Mountain Travel, Inc.</span>
+                                        <span class="footer__address--item">1234 Main Street</span>
+                                        <span class="footer__address--item">Some City, Some State</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="footer__location--link-item">
+                                <a class="footer__location--link" href="#">
+                                    <i class="fa-solid fa-envelope-open-text"></i>
+                                    <span class="footer__location-address">
+                                        support@mountaintravel.com
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="footer__location--link-item">
+                                <a class="footer__location--link" href="#">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span class="footer__location-address">
+                                    123.456.7890
+                                </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top--right-right">
+                        <!--   <h4 class="footer__heading">Mission Statement</h4>
+                           <p class="footer__mission&#45;&#45;statement">
+                               We connect adventurers' soul with meaningful experiences through our
+                               carefully selected mountain journeys that respect local cultures and
+                               preserve natural environments.
+                           </p>
+                           <ul class="footer__social-media-list">
+                               <li class="footer__social-media-link-item">
+                                   <a href="#" class="footer__social-media-link">
+                                       <i class="fa-brands fa-facebook-square"></i>
+                                   </a>
+                               </li>
+                               <li class="footer__social-media-link-item">
+                                   <a href="#" class="footer__social-media-link">
+                                       <i class="fa-brands fa-instagram"></i>
+                                   </a>
+                               </li>
+                               <li class="footer__social-media-link-item">
+                                   <a href="#" class="footer__social-media-link">
+                                       <i class="fa-brands fa-twitter-square"></i>
+                                   </a>
+                               </li>
+                               <li class="footer__social-media-link-item">
+                                   <a href="#" class="footer__social-media-link">
+                                       <i class="fa-brands fa-linkedin"></i>
+                                   </a>
+                               </li>
+                           </ul>-->
+                        
+                        <h4 class="footer__heading">Subscribe To Newsletter</h4>
+                        <form action="#">
+                            <input type="text" placeholder="email@example.com">
+                            <input type="submit" name="" value="Submit">
+                            <!--<div class="media-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>-->
+                            <ul class="footer__social-media-list">
+                                <li class="footer__social-media-link-item">
+                                    <a href="#" class="footer__social-media-link">
+                                        <i class="fa-brands fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__social-media-link-item">
+                                    <a href="#" class="footer__social-media-link">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__social-media-link-item">
+                                    <a href="#" class="footer__social-media-link">
+                                        <i class="fa-brands fa-twitter-square"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__social-media-link-item">
+                                    <a href="#" class="footer__social-media-link">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer__separator">
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy;&nbsp;2024 Mountain Travel, Inc., All Rights Reserved
+                </p>
+                <p class="footer__paragraph">
+                    <a class="footer__terms-conditions" href="#">Terms and
+                        Conditions</a>
+                </p>
+                <p class="footer__paragraph">
+                    <a class="footer__privacy-policy" href="#">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
 <!-- jquery scripts-->
 <script src="./js/jquery-3.7.1.min.js"></script>
 <!-- font awesome -->
@@ -33,6 +485,8 @@
 <script src="./js/waypoints/jquery.waypoints.min.js"></script>
 <!-- Typed Plugin - https://github.com/mattboldt/typed.js -->
 <script src="./js/typed-js/typed.min.js"></script>
+<!-- owl-carousel-2.3.4-->
+<script src="./js/owl-carousel/owl.carousel.min.js"></script>
 <!-- main scripts-->
 <script src="./js/main.js"></script>
 </body>
